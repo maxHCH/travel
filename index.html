@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>來去高雄網</title>
+    <link rel="stylesheet" href="./scss/travel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="keywords" content="高雄發大財" >
+    <meta name="description" content="高雄景點大搜索">
+</head>
+
+<body>
+    <header>
+        <div class="header-bg bg-cover ">
+            <h1 class="text-center text-white pt-5">高雄旅遊資訊</h1>
+            <div class="container-fluid">
+                <div class="row justify-content-center  mt-5 pt-5">
+                    <div class="col-md-5">
+                        <select class="form-control form-control bg-white text-black zipCode">
+                            <option >--請選擇行政區--</option>
+                            <option value="鳳山區">鳳山區</option>
+                            <option value="三民區">三民區</option>
+                            <option value="左營區">左營區</option>
+                            <option value="前鎮區">前鎮區</option>
+                            <option value="楠梓區">楠梓區</option>
+                            <option value="苓雅區">苓雅區</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center move-up">
+                <div class="col-md-8 ">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5>熱門行政區</h5>
+                        </div>
+                        <div class="card-body text-left">
+                            <input type="button" value="鳳山區" class="btn btn-outline-success mr-3 btnZip" data-zip="鳳山區">
+                            <input type="button" value="三民區" class="btn btn-outline-warning mr-3 btnZip" data-zip="三民區">
+                            <input type="button" value="左營區" class="btn btn-outline-info mr-3 btnZip" data-zip="左營區">
+                            <input type="button" value="前鎮區" class="btn btn-outline-primary mr-3 btnZip" data-zip="前鎮區">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="mt-5">
+    <h3 class="text-center main-zip text-primary my-4">---請選擇地區---</h3>
+    <section>
+        <div class="container">
+            <div class="form-row zip-index">
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-dark py-4 mt-5 text-secodary">
+        <div>© 2019 高雄旅遊網</div>
+        <div>資料來源：高雄市政府</div>
+    </footer>
+    <script src="./js/travel.js"></script>
+</body>
+
+</html>
